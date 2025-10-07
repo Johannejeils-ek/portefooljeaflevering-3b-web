@@ -18,7 +18,7 @@ function getStartupName(){
 // kildehenvisning: Chatgpt - how to get a random number
 
     let randomFirstWord = firstWords[randomFirstIndex]
-    let randomSecondWord = secondWords[randomFirstIndex]
+    let randomSecondWord = secondWords[randomSecondIndex]
 
     return `${randomFirstWord} ${randomSecondWord}`
 }
