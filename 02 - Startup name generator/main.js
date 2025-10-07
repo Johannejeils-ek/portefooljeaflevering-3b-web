@@ -6,34 +6,24 @@ Inside the function there should be two arrays with startup words
 Use the two arrays to get a random word from each array and return the new startup name with the two words
 */
 
-function getStartupName(firstWords, secondWords){
-
-
-    let randomWord = Math.random()
-
-// kildehenvisning: Chatgpt - how to get a random number
-// Random integer between 1 and 10
-    let randInt = Math.floor(Math.random() * 10) + 1;
-    console.log(randInt);
-
-    array.length
-}
-
-
-
-
-
-const firstWords = ["Neo", "Inno", "Smart", "Blue", "Next", "Bright", "Quantum", "Rapid", "Future", "Digital", "Neo", "Alpha", "Nova", "Core", "Edge", "Logic", "Pixel", "Cloud", "Data", "Vision",
-    "Hyper", "Matrix", "Cyber", "Sync", "Flow", "Lumen", "Wave", "Prime", "Axis", "Spark",];
-const secondWords = ["Vision", "Solutions", "Systems", "Works", "Dynamics", "Hub", "Network", "Innovations", "Labs", "Path",  "Volt", "Fusion", "NeoTech", "Mind", "Opti", "Stream", "Shift", "Pulse", "Sphere", "Nexa",
-    " Aero", "Zen", "Boost", "Path", "Leap", "Vibe", "Echo", "Circuit", "Byte", "Orbit",];
+function getStartupName(){
+    const firstWords = ["Neo", "Inno", "Smart", "Blue", "Next", "Bright", "Quantum", "Rapid", "Future", "Digital", "Neo", "Alpha", "Nova", "Core", "Edge", "Logic", "Pixel", "Cloud", "Data", "Vision",
+        "Hyper", "Matrix", "Cyber", "Sync", "Flow", "Lumen", "Wave", "Prime", "Axis", "Spark",];
+    const secondWords = ["Vision", "Solutions", "Systems", "Works", "Dynamics", "Hub", "Network", "Innovations", "Labs", "Path",  "Volt", "Fusion", "NeoTech", "Mind", "Opti", "Stream", "Shift", "Pulse", "Sphere", "Nexa",
+        " Aero", "Zen", "Boost", "Path", "Leap", "Vibe", "Echo", "Circuit", "Byte", "Orbit",];
 // Chatgpt har hjulpet med at generere flere startup ord
 
+    let randomFirstIndex = Math.floor(Math.random() * firstWords.length)
+    let randomSecondIndex = Math.floor(Math.random() * secondWords.length)
+// kildehenvisning: Chatgpt - how to get a random number
 
+    let randomFirstWord = firstWords[randomFirstIndex]
+    let randomSecondWord = secondWords[randomFirstIndex]
 
+    return `${randomFirstWord} ${randomSecondWord}`
+}
 
-
-
+console.log(getStartupName())
 
 
 /* Tjek liste :
