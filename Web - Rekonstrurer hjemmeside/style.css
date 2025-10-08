@@ -22,6 +22,7 @@
 .header-all{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0.5rem;
 
 }
@@ -37,8 +38,7 @@
     list-style: none;
     display: flex;
     gap: 1.3rem;
-    padding-top: 0.5rem;
-
+    font-weight: lighter;
 }
 
 .header-left{
@@ -46,10 +46,29 @@
     font-weight: lighter;
 }
 
-.header-right{
-    padding-right: 0.5rem;
+.header-left li:hover{
+    text-decoration: underline;
 }
 
+
+.header-right{
+    padding-right: 0.5rem;
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+}
+
+.header-search{
+    border: none;
+    border-bottom: 1px solid #000; /* Hjælp med streg under searchbar - Kildehenvisning: https://chatgpt.com/c/68e63703-4124-832a-a149-da3377b2effa */
+    padding-right: 10rem;
+    padding-bottom: 0.4rem;
+    font-size: 1rem;
+}
+
+.header-search ul{
+    display: flex;
+}
 
 
 /* ------ Pink Section ------ */
