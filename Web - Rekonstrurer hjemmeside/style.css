@@ -15,23 +15,63 @@
             "YTFI" 738,
             "YTLC" 514,
             "YTUC" 712;
+    margin: 0;
 }
 
 /* ------ Header ------ */
+.header-all{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+
+}
 
 .logo {
     font-family: "Nanum Myeongjo", serif;
     font-weight: 400;
     font-style: normal;
+    text-align: center;
 }
 
+.header-all ul{
+    list-style: none;
+    display: flex;
+    gap: 1.3rem;
+    padding-top: 0.5rem;
+
+}
+
+.header-left{
+    font-size: 0.9rem;
+    font-weight: lighter;
+}
+
+.header-right{
+    padding-right: 0.5rem;
+}
 
 
 
 /* ------ Pink Section ------ */
 .pink{
-    background-image: url("Pink-Background.jpg");
+    background-image: url("Pink-Background.jpg"); /* Hjælp til billed som baggrund - Kildehenvisning: https://chatgpt.com/c/68e628df-6714-8325-8953-37cd8bfe66c5 */
+
+    color: white;
 }
+
+.pink-mid{
+    padding: 22rem;
+    text-align: center;
+}
+
+.pink-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.pink-bottom-left
+
 
 
 /* ------ Category Section ------ */
@@ -41,6 +81,7 @@
 /* ------ Red Section ------ */
 .red{
     background-image: url("Red-Background.jpg");
+    color: white;
 }
 
 
@@ -50,3 +91,11 @@
 
 
 /* ------ Footer ------ */
+footer{
+    background-color: black;
+    color: white;
+}
+
+.footer-bottom-left{
+    color: dimgray;
+}
