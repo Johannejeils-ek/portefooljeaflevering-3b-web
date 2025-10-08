@@ -48,7 +48,7 @@
 
 .header-left{
     font-size: 0.9rem;
-    font-weight: lighter;
+    font-weight: 530;
     padding-left: 1rem;
 }
 
@@ -69,7 +69,7 @@
     border-bottom: 1px solid #000; /* Hjælp med streg under searchbar - Kildehenvisning: https://chatgpt.com/c/68e63703-4124-832a-a149-da3377b2effa */
     padding-right: 13rem;
     padding-bottom: 0.4rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .header-search ul{
@@ -84,7 +84,7 @@
 }
 
 .pink-mid{
-    padding: 22rem;
+    padding: 23rem;
     text-align: center;
 }
 
@@ -114,9 +114,8 @@
 .all-category img{
     width: 410px;
     height: 590px;
+    padding-top: 1.3rem;
 }
-
-
 
 /* ------ Red Section ------ */
 .red{
