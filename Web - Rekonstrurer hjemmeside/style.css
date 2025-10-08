@@ -24,6 +24,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
+    background-color: white;
+
+    position: fixed; /* Hjælp få nav til at følge med - Kildehenvisning: https://chatgpt.com/c/68e63e13-2ed0-8330-811d-5f5fc766848a */
+    top: 0;
+    width: 100%;
 
 }
 
@@ -50,12 +55,12 @@
     text-decoration: underline;
 }
 
-
 .header-right{
     padding-right: 0.5rem;
     display: flex;
     align-items: center;
     padding-left: 4rem;
+    padding-right: 2rem;
 }
 
 .header-search{
@@ -82,11 +87,11 @@
     text-align: center;
 }
 
-.october{
+.pink-october{
     font-size: 2.5rem;
 }
 
-.discount{
+.pink-discount{
     font-size: 6rem;
     font-weight: 500;
 }
@@ -108,7 +113,26 @@
     color: white;
 }
 
+.red-mid{
+    padding: 25rem;
+    text-align: center;
+}
 
+.red-discount{
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.red-season{
+    font-size: 2.5rem;
+}
+
+.red-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+}
 
 /* ------ Mini Section ------ */
 
