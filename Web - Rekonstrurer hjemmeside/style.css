@@ -29,7 +29,6 @@
     position: fixed; /* Hjælp få nav til at følge med - Kildehenvisning: https://chatgpt.com/c/68e63e13-2ed0-8330-811d-5f5fc766848a */
     top: 0;
     width: 100%;
-
 }
 
 .logo {
@@ -56,11 +55,10 @@
 }
 
 .header-right{
-    padding-right: 0.5rem;
+    padding-right: 2rem;
     display: flex;
     align-items: center;
     padding-left: 4rem;
-    padding-right: 2rem;
 }
 
 .header-search{
@@ -104,6 +102,16 @@
 }
 
 /* ------ Category Section ------ */
+.all-category{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.all-category img{
+    width: 410px;
+    height: 590px;
+}
 
 
 
@@ -136,6 +144,20 @@
 
 /* ------ Mini Section ------ */
 
+.mini {
+    display: flex;
+    padding-bottom: 1rem;
+    padding-top: 4rem;
+    font-size: 0.9rem;
+    color: grey;
+    font-weight: 300;
+}
+
+.mini ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
 
 
 /* ------ Footer ------ */
@@ -147,3 +169,6 @@ footer{
 .footer-bottom-left{
     color: dimgray;
 }
+
+
+al.
