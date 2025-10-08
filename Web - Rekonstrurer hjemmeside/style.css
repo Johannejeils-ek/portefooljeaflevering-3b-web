@@ -170,7 +170,7 @@
 
 /* ------ Footer ------ */
 footer{
-    background-color: black;
+    background-color: rgb(12, 18, 20);
     color: white;
     padding: 1rem;
     font-weight: 350;
@@ -179,7 +179,7 @@ footer{
 .footer-top{
     display: flex;
     justify-content: space-between;
-    padding-top: 2.5rem;
+    padding-top: 3rem;
 }
 
 .footer-top-left{
@@ -210,10 +210,22 @@ footer{
 .all-list{
     display: flex;
     gap: 1rem;
+    width: 60rem;
+    justify-content: space-evenly;
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding-right: 2.5rem;
 }
 
 .all-list ul{
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.all-list li:hover{
+    text-decoration: underline;
 }
 
 .footer-bottom{
