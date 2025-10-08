@@ -74,7 +74,6 @@
 /* ------ Pink Section ------ */
 .pink{
     background-image: url("Pink-Background.jpg"); /* Hjælp til billed som baggrund - Kildehenvisning: https://chatgpt.com/c/68e628df-6714-8325-8953-37cd8bfe66c5 */
-
     color: white;
 }
 
@@ -83,15 +82,21 @@
     text-align: center;
 }
 
+.october{
+    font-size: 2.5rem;
+}
+
+.discount{
+    font-size: 6rem;
+    font-weight: 500;
+}
+
 .pink-bottom{
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1.2rem;
+    font-size: 1.2rem;
 }
-
-.pink-bottom-left
-
-
 
 /* ------ Category Section ------ */
 
