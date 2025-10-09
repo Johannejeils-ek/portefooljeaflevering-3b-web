@@ -3,101 +3,117 @@
     font-family: "Roboto Flex", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-variation-settings:
-            "slnt" 0,
-            "wdth" 100,
-            "GRAD" 0,
-            "XOPQ" 96,
-            "XTRA" 468,
-            "YOPQ" 79,
-            "YTAS" 750,
-            "YTDE" -203,
-            "YTFI" 738,
-            "YTLC" 514,
-            "YTUC" 712;
+    font-variation-settings: "slnt" 0;
     margin: 0;
     padding: 0;
 }
 
 /* ------ Header ------ */
-.header-all{
+.header-all {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
     background-color: white;
-
     position: fixed; /* Hjælp få nav til at følge med - Kildehenvisning: https://chatgpt.com/c/68e63e13-2ed0-8330-811d-5f5fc766848a */
     top: 0;
     width: 100%;
 }
 
+.button-menu { /* Hjælp til burger menu - kildehenvisning: https://chatgpt.com/c/68e7d4e3-8a20-8332-8d36-69d0f171fffe */
+    display: none; /* kun synlig på mobil */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22px;
+    height: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button-menu span {
+    height: 2px;
+    width: 100%;
+    background: black;
+    border-radius: 2px;
+}
+
+.header-menu-left svg {
+    display: none;
+}
+
+.header-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
 .logo {
     font-family: "Nanum Myeongjo", serif;
     font-weight: 400;
-    font-style: normal;
-    text-align: center;
 }
 
-.header-all ul{
+.header-all ul {
     list-style: none;
     display: flex;
     gap: 1.3rem;
     font-weight: lighter;
 }
 
-.header-left{
+.header-left {
     font-size: 0.9rem;
     font-weight: 530;
     padding-left: 1rem;
 }
 
-.header-left li:hover{
+.header-left li:hover {
     text-decoration: underline;
 }
 
-.header-right{
-    padding-right: 2rem;
+.header-right {
     display: flex;
     align-items: center;
+    padding-right: 2rem;
     padding-left: 4rem;
     gap: 1rem;
 }
 
-.header-search{
+.header-search {
     border: none;
     border-bottom: 1px solid #000; /* Hjælp med streg under searchbar - Kildehenvisning: https://chatgpt.com/c/68e63703-4124-832a-a149-da3377b2effa */
     padding-right: 13rem;
     padding-bottom: 0.4rem;
     font-size: 0.9rem;
+
 }
 
-.header-search ul{
+.header-search ul {
     display: flex;
 }
 
 
 /* ------ Pink Section ------ */
-.pink{
+.pink {
     background-image: url("Pink-Background.jpg"); /* Hjælp til billed som baggrund - Kildehenvisning: https://chatgpt.com/c/68e628df-6714-8325-8953-37cd8bfe66c5 */
     color: white;
 }
 
-.pink-mid{
+.pink-mid {
     padding: 23rem;
     text-align: center;
 }
 
-.pink-october{
+.pink-october {
     font-size: 2.5rem;
 }
 
-.pink-discount{
+.pink-discount {
     font-size: 6rem;
     font-weight: 500;
 }
 
-.pink-bottom{
+.pink-bottom {
     display: flex;
     justify-content: space-between;
     padding: 1.2rem;
@@ -105,39 +121,39 @@
 }
 
 /* ------ Category Section ------ */
-.all-category{
+.all-category {
     display: flex;
     justify-content: space-around;
     padding: 2rem;
 }
 
-.all-category img{
-    width: 410px;
-    height: 590px;
+.all-category img {
+    width: 25rem;
+    height: 35rem;
     padding-top: 1.3rem;
 }
 
 /* ------ Red Section ------ */
-.red{
+.red {
     background-image: url("Red-Background.jpg");
     color: white;
 }
 
-.red-mid{
+.red-mid {
     padding: 25rem;
     text-align: center;
 }
 
-.red-discount{
+.red-discount {
     font-size: 5rem;
     font-weight: 500;
 }
 
-.red-season{
+.red-season {
     font-size: 2.5rem;
 }
 
-.red-bottom{
+.red-bottom {
     display: flex;
     justify-content: space-between;
     padding: 1.2rem;
@@ -148,50 +164,46 @@
 
 .mini {
     display: flex;
-    padding-bottom: 1rem;
-    padding-top: 3.5rem;
-    padding-left: 1rem;
+    padding: 3.5rem 0 1rem 1rem;
     font-size: 0.9rem;
     color: grey;
     font-weight: 300;
 }
 
-.mini ul{
+.mini ul {
     list-style: none;
     display: flex;
     gap: 1rem;
 }
 
-.mini li:hover{
+.mini li:hover {
     text-decoration: underline;
 }
 
 
 /* ------ Footer ------ */
-footer{
+footer {
     background-color: rgb(12, 18, 20);
     color: white;
     padding: 1rem;
     font-weight: 350;
 }
 
-.footer-top{
+.footer-top {
     display: flex;
     justify-content: space-between;
     padding-top: 3rem;
 }
 
-.footer-top-left{
+.footer-top-left {
     width: 20rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.SIGNUP{
-    border: white;
-    border-style: solid;
-    border-width: 0.09rem;
+.SIGNUP {
+    border: 0.09rem solid white;
     text-align: center;
     padding: 0.6rem;
     width: 20rem;
@@ -199,14 +211,12 @@ footer{
     font-size: 0.9rem;
 }
 
-.SIGNUP:hover{
+.SIGNUP:hover {
     background-color: grey;
-    border: grey;
-    border-style: solid;
-    border-width: 0.09rem;
+    border-color: grey;
 }
 
-.all-list{
+.all-list {
     display: flex;
     gap: 1rem;
     width: 60rem;
@@ -216,29 +226,29 @@ footer{
     padding-right: 2.5rem;
 }
 
-.all-list ul{
+.all-list ul {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.all-list li:hover{
+.all-list li:hover {
     text-decoration: underline;
 }
 
-.footer-bottom{
+.footer-bottom {
     display: flex;
     justify-content: space-between;
     padding-top: 13.5rem;
 }
 
-.footer-bottom-left{
+.footer-bottom-left {
     color: rgb(155, 158, 159);
     font-size: 0.6rem;
 }
 
-.footer-bottom-left ul{
+.footer-bottom-left ul {
     display: flex;
     list-style: none;
     gap: 1rem;
@@ -246,11 +256,11 @@ footer{
     padding: 0;
 }
 
-.footer-bottom-left li:hover{
+.footer-bottom-left li:hover {
     text-decoration: underline;
 }
 
-.footer-bottom-right{
+.footer-bottom-right {
     display: flex;
     gap: 0.5rem;
     font-size: 0.9rem;
@@ -263,11 +273,109 @@ Jeg har fået hjælp fra Chatgpt til at gøre hjemmesiden brugervenlig på telef
 @media screen and (max-width: 800px) {
     /* ----- HEADER ----- */
     .header-all {
-        flex-direction: column;
-        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .button-menu {
+        display: flex;
+    }
+
+    .header-left {
+        display: none;
+    }
+
+    .header-menu-left {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .header-menu-left svg {
+        display: flex;
+    }
+
+    .header-search {
+        display: none;
+    }
+
+    .header-right {
+        display: flex;
+        padding-left: 0;
+        gap: 0.5rem;
+        padding-right: 1rem;
+    }
+
+
+    /* ----- PINK SECTION / RED SECTION ----- */
+    .pink-mid,
+    .red-mid {
+        padding: 10rem 1rem; /* mindre padding på mobil */
+        text-align: center;
+    }
+
+    .pink-october,
+    .red-discount{
+        font-size: 1.5rem;
+    }
+
+    .pink-discount,
+    .red-season{
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    .pink-bottom,
+    .red-bottom {
+        display: flex;
+        justify-content: space-between;
+        gap: 0.5rem;
+        font-size: 1rem;
+
+    }
+
+    /* ----- CATEGORY SECTION ----- */
+    .all-category {
+        flex-direction: row;
         padding: 1rem;
-        position: static; /* Fjern fixed på små skærme for at undgå overlap */
+        gap: 1rem;
+    }
+
+    .all-category img {
+        width: 10rem;
+        height: 15rem;
+    }
+
+    /* ----- FOOTER ----- */
+    .footer-top {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-top-left{
+        width: 100%;
+    }
+
+    .SIGNUP{
+        display: block;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+        border: 1px solid white;
+        padding: 0.6rem 0;
+    }
+
+
+    .all-list{
+        display: none;
+    }
+
+    .footer-bottom-left-list{
+        display: none;
     }
 
 
 }
+
+
+
+
+
