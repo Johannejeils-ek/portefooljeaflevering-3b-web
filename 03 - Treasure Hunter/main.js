@@ -28,19 +28,20 @@ function treasureHunter (island){
         }
         }
     )
-
+    console.log("\n")
     console.log(`There were ${treasureFound} treasures in the island`)
 }
 
 treasureHunter(['T', '-', 'T', '-', '-'])
 
 
-
-
-
-// Callback function = det er en funciton der tager en function som en parameter
 /*
-[].forEach(()=>{})
+There are 5 moves in the island
+Treasure found at move 1 :)
+No treasure found :(
+Treasure found at move 3 :)
+No treasure found :(
 
-    [].forEach(function (){} )
+There were 2 treasures in the island
  */
+

@@ -23,12 +23,12 @@ function getStartupName(){
     return `${randomFirstWord} ${randomSecondWord}`
 }
 
-console.log(getStartupName())
+console.log(`Your startup name could be: ${getStartupName()}`)
 
 
-/* Tjek liste :
-1. Dan to forskellige Arrays med startup ord
-2. Få talt index tal
-3. Få Math.random ril ar vælge to random index tal
-4. Returner det nye startup Navn
+/*
+Your startup name could be: Prime Orbit
+
+Your startup name could be: Nova Zen
+
  */
