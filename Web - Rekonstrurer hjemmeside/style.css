@@ -256,3 +256,18 @@ footer{
     font-size: 0.9rem;
 }
 
+/* ----------- RESPONSIV TILPASNING / På mobil -----------
+Jeg har fået hjælp fra Chatgpt til at gøre hjemmesiden brugervenlig på telefon - Kildehenvisning: https://chatgpt.com/c/68e663d7-9e74-8330-b71b-34f68f3aebbc
+*/
+
+@media screen and (max-width: 800px) {
+    /* ----- HEADER ----- */
+    .header-all {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        position: static; /* Fjern fixed på små skærme for at undgå overlap */
+    }
+
+
+}
