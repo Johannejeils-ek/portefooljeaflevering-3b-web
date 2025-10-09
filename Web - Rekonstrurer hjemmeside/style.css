@@ -123,9 +123,19 @@
 /* ------ Category Section ------ */
 .all-category {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding: 2rem;
+    gap: 2rem;
 }
+
+.first-over-category,
+.second-over-category{
+    display: flex;
+    gap: 2rem;
+}
+
 
 .all-category img {
     width: 25rem;
@@ -334,15 +344,26 @@ Jeg har fået hjælp fra Chatgpt til at gøre hjemmesiden brugervenlig på telef
 
     /* ----- CATEGORY SECTION ----- */
     .all-category {
-        flex-direction: row;
-        padding: 1rem;
-        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .first-over-category,
+    .second-over-category{
+        display: flex;
+        justify-content: space-around;
     }
 
     .all-category img {
-        width: 10rem;
-        height: 15rem;
+        width: 20rem;
+        height: 35rem;
+        gap: 2rem;
     }
+
 
     /* ----- FOOTER ----- */
     .footer-top {
