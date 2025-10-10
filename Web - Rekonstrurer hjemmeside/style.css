@@ -348,6 +348,7 @@ Jeg har fået hjælp fra Chatgpt til at gøre hjemmesiden brugervenlig på telef
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         padding: 2rem;
         gap: 2rem;
     }
@@ -358,12 +359,12 @@ Jeg har fået hjælp fra Chatgpt til at gøre hjemmesiden brugervenlig på telef
         justify-content: space-around;
     }
 
-    .all-category img {
-        width: 20rem;
-        height: 35rem;
-        gap: 2rem;
-    }
-
+    .all-category img { /* Kildehenvisning: https://chatgpt.com/c/68e8b925-8d68-8330-a00f-b79f83bf68e7*/
+        width: 100%;
+        max-width: 20rem;
+        height: 25rem;
+        object-fit: cover;
+        flex: 1 1 300px;
 
     /* ----- FOOTER ----- */
     .footer-top {
