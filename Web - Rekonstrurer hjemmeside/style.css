@@ -365,6 +365,7 @@ Jeg har fået hjælp fra Chatgpt til at gøre hjemmesiden brugervenlig på telef
         height: 25rem;
         object-fit: cover;
         flex: 1 1 300px;
+    }
 
     /* ----- FOOTER ----- */
     .footer-top {
@@ -395,7 +396,7 @@ Jeg har fået hjælp fra Chatgpt til at gøre hjemmesiden brugervenlig på telef
     }
 
 
-}}
+}
 
 
 
