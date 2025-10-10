@@ -34,7 +34,6 @@ function treasureHunter (island){
 
 treasureHunter(['T', '-', 'T', '-', '-'])
 
-
 /*
 There are 5 moves in the island
 Treasure found at move 1 :)
