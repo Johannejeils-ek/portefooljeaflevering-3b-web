@@ -6,17 +6,18 @@ Scenario: Two players compete in a dice rolling championship! Each player takes 
 
  */
 
-console.log("🏆Welcome to the Dice Rolling Championship!🏆")
+console.log("🏆🎲Welcome to the Dice Rolling Championship!🎲🏆")
 
 const firstPlayer = prompt("Player 1.");
 const secondPlayer = prompt("Player 2.");
 
 console.log(`Player 1. ${firstPlayer}`);
 console.log(`Player 2. ${secondPlayer}`);
+console.log("-----------------------------")
 
 function playerDiceRolling (name){
-    let randomDiceNumber = Math.floor(Math.random() * 6) + 1; // kildehenvisning: https://chatgpt.com/c/68e78940-b2e4-8331-9af5-a04f3366dafb
     prompt("Press Enter to roll");
+    let randomDiceNumber = Math.floor(Math.random() * 6) + 1; // kildehenvisning: https://chatgpt.com/c/68e78940-b2e4-8331-9af5-a04f3366dafb
     console.log(`${name} presses Enter to roll...`);
     console.log(`${name} rolled: ${randomDiceNumber}`);
     return randomDiceNumber;
@@ -24,7 +25,7 @@ function playerDiceRolling (name){
 
 let scoreFirstPlayer = 0;
 let scoreSecondPlayer = 0;
-const roundsTotal = 2;
+const roundsTotal = 10;
 
 for(let i = 1; i <= roundsTotal; i++){
     console.log("\n")
@@ -41,8 +42,10 @@ for(let i = 1; i <= roundsTotal; i++){
     console.log(`Totalscore for Round: ${i}`)
     console.log(`${firstPlayer} Total ${scoreFirstPlayer}`);
     console.log(`${secondPlayer} Total ${scoreSecondPlayer}`);
+
 }
 
+console.log("----------------------------")
 console.log("\n")
 console.log("🎉 Game Over! 🎉");
 console.log("Final Scores:")
@@ -50,11 +53,15 @@ console.log(`${firstPlayer}: ${scoreFirstPlayer}`)
 console.log(`${secondPlayer}: ${scoreSecondPlayer}`)
 
 console.log("\n")
+console.log("----------------------------")
 if (scoreFirstPlayer > scoreSecondPlayer){
     console.log(`🏆${firstPlayer} wins the championship!🏆`)
-} else {
+} else if (scoreFirstPlayer < scoreSecondPlayer){
     console.log(`🏆${secondPlayer} wins the championship! 🏆`)
+} else{
+    console.log("🏆Both players are championship!🏆")
 }
+
 
 /*
 🏆Welcome to the Dice Rolling Championship!🏆

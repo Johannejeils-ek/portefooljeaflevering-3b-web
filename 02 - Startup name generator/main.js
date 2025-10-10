@@ -7,10 +7,10 @@ Use the two arrays to get a random word from each array and return the new start
 */
 
 function getStartupName(){
-    const firstWords = ["Neo", "Inno", "Smart", "Blue", "Next", "Bright", "Quantum", "Rapid", "Future", "Digital", "Neo", "Alpha", "Nova", "Core", "Edge", "Logic", "Pixel", "Cloud", "Data", "Vision",
+    const firstWords = ["Neo", "Inno", "Smart", "Blue", "Next", "Bright", "Quantum", "Rapid", "Future", "Digital", "Alpha", "Nova", "Core", "Edge", "Logic", "Pixel", "Cloud", "Data", "Vision",
         "Hyper", "Matrix", "Cyber", "Sync", "Flow", "Lumen", "Wave", "Prime", "Axis", "Spark",];
     const secondWords = ["Vision", "Solutions", "Systems", "Works", "Dynamics", "Hub", "Network", "Innovations", "Labs", "Path",  "Volt", "Fusion", "NeoTech", "Mind", "Opti", "Stream", "Shift", "Pulse", "Sphere", "Nexa",
-        " Aero", "Zen", "Boost", "Path", "Leap", "Vibe", "Echo", "Circuit", "Byte", "Orbit",];
+        "Aero", "Zen", "Boost", "Path", "Leap", "Vibe", "Echo", "Circuit", "Byte", "Orbit",];
 // Chatgpt har hjulpet med at generere flere startup ord
 
     let randomFirstIndex = Math.floor(Math.random() * firstWords.length)

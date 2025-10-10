@@ -61,8 +61,8 @@ let highest = Math.max(...grades);
 let lowest = Math.min(...grades)
 let avergesGrades = Math.floor(averageGrade); // For at få et helt tal
 
-console.log(`Highest Grade: ${highest} (A)`)
-console.log(`Lowest Grade: ${lowest} (F)`)
+console.log(`Highest Grade: ${highest}`)
+console.log(`Lowest Grade: ${lowest}`)
 console.log(`Average Grade: ${avergesGrades}`)
 
 
